@@ -1,4 +1,7 @@
 import Link from "next/link";
+import SEOContentGlobal from "@/components/sections/SEOContentGlobal";
+import ServiceAreasGlobal from "@/components/sections/ServiceAreasGlobal";
+import CompareOptions from "@/components/sections/CompareOptions";
 
 export default function Home() {
   return (
@@ -11,6 +14,10 @@ export default function Home() {
         <Link href="/california" className="rounded-xl border p-6 hover:bg-accent transition">California</Link>
         <Link href="/washington" className="rounded-xl border p-6 hover:bg-accent transition">Washington</Link>
       </div>
+
+      <CompareOptions state="Your Area" />
+      <SEOContentGlobal />
+      <ServiceAreasGlobal />
     </div>
   );
 }

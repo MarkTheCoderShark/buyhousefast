@@ -5,6 +5,9 @@ import Benefits from "@/components/sections/Benefits";
 import Testimonials from "@/components/sections/Testimonials";
 import LeadForm from "@/components/sections/LeadForm";
 import FAQ from "@/components/sections/FAQ";
+import CompareOptions from "@/components/sections/CompareOptions";
+import SEOContent from "@/components/sections/SEOContent";
+import ServiceAreas from "@/components/sections/ServiceAreas";
 
 export const metadata: Metadata = {
   title: "Sell Your House Fast in Washington | Cash Offer in 24 Hours",
@@ -19,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 export default function WashingtonPage() {
-  const ld = {
+  const ldLocalBusiness = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "BuyHouseFast Washington",
@@ -37,13 +40,37 @@ export default function WashingtonPage() {
     }
   };
 
+  const ldFAQ = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      { "@type": "Question", name: "How fast can you buy my Washington house?", acceptedAnswer: { "@type": "Answer", text: "Many sellers close in 7–14 days; we work on your timeline." } },
+      { "@type": "Question", name: "Do I need to make repairs?", acceptedAnswer: { "@type": "Answer", text: "No. Sell as-is. We handle repairs after closing." } },
+      { "@type": "Question", name: "Are there commissions?", acceptedAnswer: { "@type": "Answer", text: "No agent commissions and no hidden fees." } }
+    ]
+  };
+
+  const ldBreadcrumbs = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.buyhousefast.local/" },
+      { "@type": "ListItem", position: 2, name: "Washington", item: "https://www.buyhousefast.local/washington" }
+    ]
+  };
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldLocalBusiness) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldFAQ) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldBreadcrumbs) }} />
       <Hero state="Washington" />
       <HowItWorks />
       <Benefits state="Washington" />
       <Testimonials state="Washington" />
+      <CompareOptions state="Washington" />
+      <SEOContent state="Washington" />
+      <ServiceAreas state="Washington" />
       <LeadForm state="Washington" />
       <FAQ state="Washington" />
     </>

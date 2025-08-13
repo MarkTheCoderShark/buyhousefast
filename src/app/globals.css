@@ -1,25 +1,26 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: #0b1220;
-  --foreground: #0f172a;
-  --card: #ffffff;
-  --card-foreground: #0b1220;
-  --primary: #0ea5e9;
-  --primary-foreground: #ffffff;
-  --secondary: #e2e8f0;
-  --secondary-foreground: #0b1220;
-  --muted: #f1f5f9;
-  --muted-foreground: #475569;
-  --accent: #dbeafe;
-  --accent-foreground: #0b1220;
+  --foreground: #e5e7eb;
+  --card: #0f172a;
+  --card-foreground: #e5e7eb;
+  --primary: #38bdf8;
+  --primary-foreground: #0b1220;
+  --secondary: #111827;
+  --secondary-foreground: #e5e7eb;
+  --muted: #0b1220;
+  --muted-foreground: #94a3b8;
+  --accent: #0b1220;
+  --accent-foreground: #e5e7eb;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #e5e7eb;
-  --input: #e5e7eb;
-  --ring: #0ea5e9;
-  --radius: 0.5rem;
+  --border: #1f2937;
+  --input: #1f2937;
+  --ring: #38bdf8;
+  --radius: 0.75rem;
 }
 
 @theme inline {
@@ -41,49 +42,26 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --radius: var(--radius);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0b1220;
-    --foreground: #e5e7eb;
-    --card: #0f172a;
-    --card-foreground: #e5e7eb;
-    --primary: #38bdf8;
-    --primary-foreground: #0b1220;
-    --secondary: #1f2937;
-    --secondary-foreground: #e5e7eb;
-    --muted: #0b1220;
-    --muted-foreground: #94a3b8;
-    --accent: #0b1220;
-    --accent-foreground: #e5e7eb;
-    --destructive: #ef4444;
-    --destructive-foreground: #ffffff;
-    --border: #1f2937;
-    --input: #1f2937;
-    --ring: #38bdf8;
-  }
-}
+/* Base */
+body { background: var(--background); color: var(--foreground); }
 
-/* Component base */
-body {
-  background: var(--background);
-  color: var(--foreground);
+h1,h2,h3,h4 { letter-spacing: -0.01em; }
+
+/* Tailwind Typography tweaks */
+.prose :where(a):not(:where([class~="not-prose"] *)) {
+  text-decoration: none;
 }
+.prose :where(a):not(:where([class~="not-prose"] *)):hover {
+  text-decoration: underline;
+}
+.prose :where(li)::marker { color: var(--primary); }
 
 /* Animations for Accordion */
-@keyframes accordion-down {
-  from { height: 0 }
-  to { height: var(--radix-accordion-content-height) }
-}
-
-@keyframes accordion-up {
-  from { height: var(--radix-accordion-content-height) }
-  to { height: 0 }
-}
-
-/* Utility mapping for Tailwind v4 */
+@keyframes accordion-down { from { height: 0 } to { height: var(--radix-accordion-content-height) } }
+@keyframes accordion-up { from { height: var(--radix-accordion-content-height) } to { height: 0 } }
 @utility animate-accordion-down { animation: accordion-down 0.2s ease-out; }
 @utility animate-accordion-up { animation: accordion-up 0.2s ease-out; }
