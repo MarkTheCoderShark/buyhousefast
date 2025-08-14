@@ -25,13 +25,13 @@ export default function WashingtonPage() {
   const ldLocalBusiness = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "BuyHouseFast Washington",
+    name: "SellHouseFast Washington",
     areaServed: "Washington",
-    url: "https://www.buyhousefast.local/washington",
+    url: "https://www.sellhousefast.local/washington",
     telephone: "+1-800-555-1234",
     sameAs: [
-      "https://www.facebook.com/buyhousefast",
-      "https://www.linkedin.com/company/buyhousefast"
+      "https://www.facebook.com/sellhousefast",
+      "https://www.linkedin.com/company/sellhousefast"
     ],
     address: {
       "@type": "PostalAddress",
@@ -54,8 +54,8 @@ export default function WashingtonPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.buyhousefast.local/" },
-      { "@type": "ListItem", position: 2, name: "Washington", item: "https://www.buyhousefast.local/washington" }
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.sellhousefast.local/" },
+      { "@type": "ListItem", position: 2, name: "Washington", item: "https://www.sellhousefast.local/washington" }
     ]
   };
 

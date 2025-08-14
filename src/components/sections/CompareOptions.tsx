@@ -13,7 +13,7 @@ export default function CompareOptions({ state }: { state: string }) {
           </ul>
         </div>
         <div className="rounded-xl border p-6 bg-card">
-          <h3 className="font-semibold mb-2">Sell to BuyHouseFast</h3>
+          <h3 className="font-semibold mb-2">Sell to SellHouseFast</h3>
           <ul className="text-sm text-muted-foreground grid gap-2">
             <li>• No repairs, cleaning, or showings</li>
             <li>• Choose your close date — as fast as 7 days</li>

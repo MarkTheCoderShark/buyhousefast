@@ -25,13 +25,13 @@ export default function CaliforniaPage() {
   const ldLocalBusiness = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "BuyHouseFast California",
+    name: "SellHouseFast California",
     areaServed: "California",
-    url: "https://www.buyhousefast.local/california",
+    url: "https://www.sellhousefast.local/california",
     telephone: "+1-800-555-1234",
     sameAs: [
-      "https://www.facebook.com/buyhousefast",
-      "https://www.linkedin.com/company/buyhousefast"
+      "https://www.facebook.com/sellhousefast",
+      "https://www.linkedin.com/company/sellhousefast"
     ],
     address: {
       "@type": "PostalAddress",
@@ -54,8 +54,8 @@ export default function CaliforniaPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.buyhousefast.local/" },
-      { "@type": "ListItem", position: 2, name: "California", item: "https://www.buyhousefast.local/california" }
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.sellhousefast.local/" },
+      { "@type": "ListItem", position: 2, name: "California", item: "https://www.sellhousefast.local/california" }
     ]
   };
 

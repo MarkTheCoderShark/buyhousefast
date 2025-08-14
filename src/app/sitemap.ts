@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://www.buyhousefast.local";
+  const base = "https://www.sellhousefast.local";
   return [
     { url: `${base}/`, lastModified: new Date() },
     { url: `${base}/california`, lastModified: new Date() },

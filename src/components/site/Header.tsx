@@ -21,7 +21,7 @@ export default function Header({ className }: HeaderProps) {
             href="/" 
             className="font-semibold text-sm md:text-base transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 rounded-md"
           >
-            BuyHouseFast
+            SellHouseFast
           </Link>
           
           <nav className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">

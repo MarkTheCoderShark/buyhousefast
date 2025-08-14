@@ -5,14 +5,14 @@ export default function Footer() {
     <footer className="border-t mt-20">
       <div className="mx-auto max-w-6xl px-4 py-10 grid gap-8 md:grid-cols-4">
         <div className="space-y-3">
-          <div className="font-semibold text-lg">BuyHouseFast</div>
+          <div className="font-semibold text-lg">SellHouseFast</div>
           <p className="text-sm text-muted-foreground">We buy houses for cash in any condition. Fast, fair, and hassle-free.</p>
         </div>
         <div>
           <div className="font-medium mb-3">Contact</div>
           <ul className="space-y-2 text-sm">
             <li><a href="tel:+18005551234">(800) 555-1234</a></li>
-            <li><a href="mailto:offers@buyhousefast.com">offers@buyhousefast.com</a></li>
+            <li><a href="mailto:offers@sellhousefast.com">offers@sellhousefast.com</a></li>
           </ul>
         </div>
         <div>
@@ -30,7 +30,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t py-4 text-center text-xs text-muted-foreground">© {new Date().getFullYear()} BuyHouseFast. All rights reserved.</div>
+      <div className="border-t py-4 text-center text-xs text-muted-foreground">© {new Date().getFullYear()} SellHouseFast. All rights reserved.</div>
     </footer>
   );
 } 

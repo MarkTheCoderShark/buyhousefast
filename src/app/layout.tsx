@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BuyHouseFast — Sell Your House for Cash",
+  title: "SellHouseFast — Sell Your House for Cash",
   description: "Get a fair cash offer for your home in any condition and close on your timeline.",
-  metadataBase: new URL("https://www.buyhousefast.local"),
+  metadataBase: new URL("https://www.sellhousefast.local"),
 };
 
 export default function RootLayout({
