@@ -16,7 +16,7 @@ export default function Header({ className }: HeaderProps) {
   return (
     <header className={cn("sticky top-3 z-40 w-full", className)}>
       <div className="mx-auto max-w-6xl px-4">
-        <div className="rounded-full border border-border/30 bg-secondary/60 backdrop-blur supports-[backdrop-filter]:bg-secondary/40 shadow-sm flex items-center justify-between gap-4 px-4 py-1.5">
+        <div className="rounded-full border border-border/30 bg-white backdrop-blur shadow-sm flex items-center justify-between gap-4 px-4 py-1.5">
           <Link 
             href="/" 
             className="font-semibold text-sm md:text-base transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 rounded-md"
@@ -55,7 +55,7 @@ export default function Header({ className }: HeaderProps) {
         </div>
       </div>
       
-      <div className={cn("md:hidden overflow-hidden transition-all duration-300 ease-in-out border-t border-border/30 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/85", isMobileMenuOpen ? "max-h-64" : "max-h-0 border-t-0")}> 
+      <div className={cn("md:hidden overflow-hidden transition-all duration-300 ease-in-out border-t border-border/30 bg-white backdrop-blur", isMobileMenuOpen ? "max-h-64" : "max-h-0 border-t-0")}> 
         <div className="mx-auto max-w-6xl px-4 py-3 grid gap-3">
           <Link href="/california" className="text-sm hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 rounded-md px-2 py-1">California</Link>
           <Link href="/washington" className="text-sm hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 rounded-md px-2 py-1">Washington</Link>
