@@ -7,6 +7,15 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+interface TestimonialData {
+  name: string;
+  city: string;
+  text: string;
+  stars: number;
+  situation?: string;
+  timeframe?: string;
+}
+
 interface TestimonialProps {
   state: string;
   headline?: string;
@@ -19,7 +28,7 @@ export default function Testimonials({
   subheadline 
 }: TestimonialProps) {
 
-  const testimonials = useMemo(() => {
+  const testimonials = useMemo((): TestimonialData[] => {
     if (state === "California") {
       return [
         { 
@@ -134,19 +143,19 @@ export default function Testimonials({
                           <Star key={i} size={16} className={cn("fill-current", i < t.stars ? "text-amber-400" : "text-slate-300")} />
                         ))}
                       </div>
-                      {(t as any).situation && (
+                      {t.situation && (
                         <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium">
-                          {(t as any).situation}
+                          {t.situation}
                         </span>
                       )}
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-3 pt-0">
                     <p className="text-sm text-slate-700 leading-relaxed">&ldquo;{t.text}&rdquo;</p>
-                    {(t as any).timeframe && (
+                    {t.timeframe && (
                       <div className="flex items-center justify-between pt-2 border-t border-slate-100">
                         <span className="text-xs text-slate-500">Closed in:</span>
-                        <span className="text-xs font-semibold text-green-600">{(t as any).timeframe}</span>
+                        <span className="text-xs font-semibold text-green-600">{t.timeframe}</span>
                       </div>
                     )}
                   </CardContent>
