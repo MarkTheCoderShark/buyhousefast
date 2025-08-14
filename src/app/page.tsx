@@ -11,6 +11,8 @@ import SEOContentGlobal from "@/components/sections/SEOContentGlobal";
 import ServiceAreasGlobal from "@/components/sections/ServiceAreasGlobal";
 import LeadFormSwitcher from "@/components/sections/LeadFormSwitcher";
 import FAQGlobal from "@/components/sections/FAQGlobal";
+import NewSocialProofSection from "@/components/sections/NewSocialProofSection";
+import VideoTestimonialsSection from "@/components/sections/VideoTestimonialsSection";
 import { useId } from "react";
 
 // Grid pattern component for visual texture
@@ -206,6 +208,14 @@ export default function Home() {
 
       {/* Wave Divider */}
       <WaveDivider className="text-slate-800" inverted={true} />
+
+      {/* Social Proof Section */}
+      <SectionWrapper className="bg-white">
+        <NewSocialProofSection />
+      </SectionWrapper>
+
+      {/* Video Testimonials Section */}
+      <VideoTestimonialsSection />
 
       {/* SEO Content */}
       <SectionWrapper className="bg-white">
