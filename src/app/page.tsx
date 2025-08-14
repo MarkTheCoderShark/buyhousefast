@@ -1,23 +1,29 @@
-import Link from "next/link";
+import Hero from "@/components/sections/Hero";
+import HowItWorks from "@/components/sections/HowItWorks";
+import Benefits from "@/components/sections/Benefits";
+import CompareOptions from "@/components/sections/CompareOptions";
+import Testimonials from "@/components/sections/Testimonials";
 import SEOContentGlobal from "@/components/sections/SEOContentGlobal";
 import ServiceAreasGlobal from "@/components/sections/ServiceAreasGlobal";
-import CompareOptions from "@/components/sections/CompareOptions";
+import LeadFormSwitcher from "@/components/sections/LeadFormSwitcher";
+import FAQGlobal from "@/components/sections/FAQGlobal";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-16">
-      <div className="max-w-2xl">
-        <h1 className="text-3xl md:text-4xl font-bold">Sell Your House Fast — Get a Cash Offer</h1>
-        <p className="text-muted-foreground mt-3">Choose your state to see a tailored page and get a fair cash offer in 24 hours.</p>
-      </div>
-      <div className="grid sm:grid-cols-2 gap-4 mt-8">
-        <Link href="/california" className="rounded-xl border p-6 hover:bg-accent transition">California</Link>
-        <Link href="/washington" className="rounded-xl border p-6 hover:bg-accent transition">Washington</Link>
-      </div>
-
+    <div className="">
+      <Hero state="California & Washington" />
+      <HowItWorks />
+      <Benefits state="Your Area" />
       <CompareOptions state="Your Area" />
+
+      <Testimonials state="California" headline="What California Sellers Say" />
+      <Testimonials state="Washington" headline="What Washington Sellers Say" />
+
       <SEOContentGlobal />
       <ServiceAreasGlobal />
+
+      <FAQGlobal />
+      <LeadFormSwitcher />
     </div>
   );
 }
