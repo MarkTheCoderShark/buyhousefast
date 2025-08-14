@@ -47,7 +47,7 @@
 }
 
 /* Base */
-html, body { background: #f8fafc; color: var(--foreground); }
+html, body { background: #ffffff; color: var(--foreground); }
 
 h1,h2,h3,h4 { letter-spacing: -0.01em; }
 

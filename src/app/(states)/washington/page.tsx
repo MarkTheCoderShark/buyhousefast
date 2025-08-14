@@ -66,7 +66,7 @@ export default function WashingtonPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldBreadcrumbs) }} />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-slate-50 to-slate-100 py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <Hero state="Washington" />
         </div>

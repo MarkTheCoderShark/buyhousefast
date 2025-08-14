@@ -124,7 +124,7 @@ export default function Home() {
   return (
     <div className="bg-background text-foreground">
       {/* Hero Section */}
-      <SectionWrapper className="bg-gradient-to-b from-slate-50 to-slate-100">
+      <SectionWrapper className="bg-white">
         <Hero state="California & Washington" />
       </SectionWrapper>
 
