@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Star, Award, CheckCircle } from "lucide-react";
+import HeroLeadCard from "@/components/sections/HeroLeadCard";
 
 export default function Hero({ state }: { state: string }) {
   return (
@@ -8,7 +8,7 @@ export default function Hero({ state }: { state: string }) {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background/5 to-transparent"></div>
       
       <div className="mx-auto max-w-6xl px-4">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="grid lg:grid-cols-[1.25fr_1fr] gap-10 items-start">
           <div className="space-y-8">
             <h1 className="text-4xl md:text-6xl font-extrabold leading-[1.05] tracking-tight bg-gradient-to-br from-foreground to-foreground/80 bg-clip-text">
               Sell Your House Fast in {state}
@@ -63,15 +63,8 @@ export default function Hero({ state }: { state: string }) {
             </div>
           </div>
           
-          <div className="relative aspect-[4/3] md:aspect-[5/4] rounded-2xl border bg-card shadow-lg overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
-            <Image 
-              src="/next.svg" 
-              alt={`${state} homes`} 
-              fill 
-              className="object-cover p-0 dark:brightness-90 transition-all hover:scale-105 duration-700" 
-              priority
-            />
+          <div className="lg:mt-4">
+            <HeroLeadCard />
           </div>
         </div>
       </div>
