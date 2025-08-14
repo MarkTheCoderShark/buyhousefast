@@ -7,8 +7,8 @@ export default function SEOContent({ state }: { state: "California" | "Washingto
 
   return (
     <section className="mx-auto max-w-6xl px-4 pt-20">
-      <div className="rounded-2xl border bg-card p-6 md:p-8 shadow-sm">
-        <div className="prose prose-invert max-w-none">
+      <div className="rounded-2xl border bg-white p-6 md:p-8 shadow-sm">
+        <div className="prose prose-slate max-w-none text-slate-900">
           <h2>Need to {phrase1}? Here’s how we help.</h2>
           <p>
             If you’re looking to {phrase1}, you’re in the right place. We are trusted {phrase2} who
