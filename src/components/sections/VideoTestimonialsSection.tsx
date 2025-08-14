@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -61,10 +60,7 @@ const videoTestimonials: VideoTestimonial[] = [
 ];
 
 export default function VideoTestimonialsSection() {
-  const [activeVideo, setActiveVideo] = useState<string | null>(null);
-
   const playVideo = (videoId: string) => {
-    setActiveVideo(videoId);
     // In a real implementation, this would open a video modal or player
     console.log(`Playing video: ${videoId}`);
   };

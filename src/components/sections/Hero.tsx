@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Star, Award, CheckCircle, Clock, DollarSign, Home, BadgeCheck } from "lucide-react";
+import { Star, Award, Clock, DollarSign, Home, BadgeCheck } from "lucide-react";
 import HeroLeadCard from "@/components/sections/HeroLeadCard";
 import { Badge } from "@/components/ui/badge";
 

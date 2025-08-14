@@ -92,7 +92,7 @@ const stats = [
 ];
 
 export default function NewSocialProofSection() {
-  const [currentSales, setCurrentSales] = useState(recentSales.slice(0, 3));
+  const [currentSales] = useState(recentSales.slice(0, 3));
   const [housesThisWeek, setHousesThisWeek] = useState(12);
 
   useEffect(() => {
@@ -112,7 +112,7 @@ export default function NewSocialProofSection() {
             Trusted by Homeowners Across California & Washington
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We've helped hundreds of families sell their homes quickly and fairly. 
+            We&apos;ve helped hundreds of families sell their homes quickly and fairly. 
             See our recent purchases and what makes us different.
           </p>
         </div>

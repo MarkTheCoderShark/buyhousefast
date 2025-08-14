@@ -42,7 +42,7 @@ export default function FAQGlobal() {
           <ul className="mt-2 space-y-1 list-disc pl-5">
             <li>Skip costly repairs and renovations</li>
             <li>No cleaning, staging, or preparing for showings</li>
-            <li>Leave unwanted items behind - we'll handle disposal</li>
+            <li>Leave unwanted items behind - we&apos;ll handle disposal</li>
             <li>Even homes with serious structural issues or damage</li>
           </ul>
           <p className="mt-2 text-muted-foreground italic">Many sellers save $15,000+ by avoiding repair costs and cleaning expenses.</p>
@@ -104,7 +104,7 @@ export default function FAQGlobal() {
           </ul>
           <div className="mt-3 p-3 bg-muted/50 rounded-md flex items-start gap-2">
             <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-            <p className="text-sm">We've helped hundreds of homeowners avoid foreclosure with our quick closing process and direct lender communication.</p>
+            <p className="text-sm">We&apos;ve helped hundreds of homeowners avoid foreclosure with our quick closing process and direct lender communication.</p>
           </div>
         </div>
       ),
@@ -265,7 +265,7 @@ export default function FAQGlobal() {
 
       <div className="mt-12 text-center">
         <p className="text-muted-foreground mb-4">
-          Still have questions? We're here to help!
+          Still have questions? We&apos;re here to help!
         </p>
         <Button size="lg" className="mr-3">
           Get Your Cash Offer

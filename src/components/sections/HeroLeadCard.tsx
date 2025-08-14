@@ -194,7 +194,7 @@ export default function HeroLeadCard({ prefilledState }: { prefilledState?: "Cal
                         <Input type="tel" inputMode="tel" placeholder="(555) 555-5555" {...field} />
                       </FormControl>
                       <FormDescription className="text-xs">
-                        For faster response (we'll never spam you)
+                        For faster response (we&apos;ll never spam you)
                       </FormDescription>
                       <FormMessage />
                     </FormItem>
@@ -267,7 +267,7 @@ export default function HeroLeadCard({ prefilledState }: { prefilledState?: "Cal
                 role="status"
               >
                 <CheckCircle className="h-5 w-5 mr-2 text-green-600" />
-                <p className="text-sm">Thanks! We'll reach out with your offer within 24 hours.</p>
+                <p className="text-sm">Thanks! We&apos;ll reach out with your offer within 24 hours.</p>
               </motion.div>
             )}
             
