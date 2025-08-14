@@ -41,8 +41,8 @@ export default function Testimonials({
       <div className="absolute inset-0 bg-gradient-to-b from-background/50 to-background z-0" />
       
       <div className="relative z-10 text-center max-w-2xl mx-auto mb-10">
-        <h2 className="text-2xl md:text-3xl font-semibold">{headline}</h2>
-        <p className="text-muted-foreground mt-2">{subheadline || `Real stories from ${state} homeowners.`}</p>
+        <h2 className="text-2xl md:text-3xl font-semibold text-white">{headline}</h2>
+        <p className="text-white/80 mt-2">{subheadline || `Real stories from ${state} homeowners.`}</p>
       </div>
 
       <div className="relative z-10">
