@@ -4,7 +4,7 @@ import HeroLeadCard from "@/components/sections/HeroLeadCard";
 
 export default function Hero({ state }: { state: string }) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-background to-background/60 pt-16 md:pt-24">
+    <section className="relative overflow-hidden bg-gradient-to-b from-background to-background/60 pt-8 md:pt-12">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background/5 to-transparent"></div>
       
       <div className="mx-auto max-w-6xl px-4">
