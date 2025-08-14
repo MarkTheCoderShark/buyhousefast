@@ -60,9 +60,9 @@ export default function LeadForm({ state }: { state: "California" | "Washington"
     <section id="lead-form" className="mx-auto max-w-6xl px-4 pt-20">
       <div className="grid lg:grid-cols-2 gap-8 items-start">
         <div>
-          <h2 className="text-2xl md:text-3xl font-semibold">Get Your {state} Cash Offer</h2>
-          <p className="text-muted-foreground mt-2">Fill out the form and we’ll send a fair, no-obligation cash offer within 24 hours.</p>
-          <ul className="text-sm text-muted-foreground grid gap-2 mt-4">
+          <h2 className="text-2xl md:text-3xl font-semibold text-white">Get Your {state} Cash Offer</h2>
+          <p className="text-white/80 mt-2">Fill out the form and we’ll send a fair, no-obligation cash offer within 24 hours.</p>
+          <ul className="text-sm text-white/70 grid gap-2 mt-4">
             <li>• Your information is private and secure</li>
             <li>• No fees or commissions</li>
             <li>• Cancel anytime — no obligation</li>
@@ -113,7 +113,7 @@ export default function LeadForm({ state }: { state: "California" | "Washington"
                   <FormControl>
                     <Input readOnly value={field.value} aria-readonly />
                   </FormControl>
-                  <FormDescription>State is pre-filled based on this page.</FormDescription>
+                  <FormDescription className="text-white/60">State is pre-filled based on this page.</FormDescription>
                   <FormMessage />
                 </FormItem>
               )} />
@@ -135,7 +135,7 @@ export default function LeadForm({ state }: { state: "California" | "Washington"
               {result === "error" && (
                 <p className="text-sm text-destructive" role="status">Something went wrong. Please try again.</p>
               )}
-              <p className="text-xs text-muted-foreground">By submitting, you agree to our Privacy Policy and Terms. We respect your privacy.</p>
+              <p className="text-xs text-white/60">By submitting, you agree to our Privacy Policy and Terms. We respect your privacy.</p>
             </form>
           </Form>
         </div>
