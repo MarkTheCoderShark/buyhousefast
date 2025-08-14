@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function SEOContentGlobal() {
   return (
     <section className="mx-auto max-w-6xl px-4 pt-20">
-      <div className="rounded-2xl border bg-card p-6 md:p-8 shadow-sm">
-        <div className="prose prose-slate max-w-none dark:prose-invert">
+      <div className="rounded-2xl border bg-white p-6 md:p-8 shadow-sm">
+        <div className="prose prose-slate max-w-none text-slate-900">
           <h2>Sell Your House Fast — A Better Way to Sell</h2>
           <p>
             If you’re searching for phrases like “sell your house fast,” “we buy houses,” or “cash home
