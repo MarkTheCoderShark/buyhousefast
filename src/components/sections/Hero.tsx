@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 
 export default function Hero({ state }: { state: string }) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-background to-background/60 pt-8 md:pt-12">
+    <section className="relative overflow-hidden bg-gradient-to-b from-background to-background/60 pt-2 md:pt-4">
       {/* Background gradient effect */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-background/5 to-transparent"></div>
       

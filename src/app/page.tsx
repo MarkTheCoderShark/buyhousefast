@@ -137,7 +137,7 @@ export default function Home() {
   return (
     <div className="bg-background text-foreground">
       {/* Hero Section */}
-      <SectionWrapper className="bg-white">
+      <SectionWrapper className="bg-white !pt-2 md:!pt-4 pb-16 md:pb-24">
         <Hero state="California & Washington" />
       </SectionWrapper>
 

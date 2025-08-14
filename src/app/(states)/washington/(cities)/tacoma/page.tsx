@@ -101,7 +101,7 @@ export default function TacomaPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldBreadcrumbs) }} />
       
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white pt-2 md:pt-4 pb-16 md:pb-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <Hero state="Tacoma, WA" />
         </div>
