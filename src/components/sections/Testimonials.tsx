@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -18,7 +18,6 @@ export default function Testimonials({
   headline = "What Sellers Say", 
   subheadline 
 }: TestimonialProps) {
-  const [api, setApi] = useState<any>(null);
 
   const testimonials = useMemo(() => {
     if (state === "California") {
@@ -47,7 +46,7 @@ export default function Testimonials({
       </div>
 
       <div className="relative z-10">
-        <Carousel setApi={setApi} className="py-6" opts={{ align: "start", loop: testimonials.length > 3 }}>
+        <Carousel className="py-6" opts={{ align: "start", loop: testimonials.length > 3 }}>
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonials.map((t, idx) => (
               <CarouselItem key={idx} className="pl-2 md:basis-1/2 lg:basis-1/3 md:pl-4">
@@ -68,7 +67,7 @@ export default function Testimonials({
                         <Star key={i} size={16} className={cn("fill-current", i < t.stars ? "text-amber-400" : "text-muted stroke-muted fill-muted")} />
                       ))}
                     </div>
-                    <p className="text-sm text-muted-foreground">"{t.text}"</p>
+                    <p className="text-sm text-muted-foreground">&ldquo;{t.text}&rdquo;</p>
                   </CardContent>
                 </Card>
               </CarouselItem>

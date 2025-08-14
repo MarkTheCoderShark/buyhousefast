@@ -9,7 +9,7 @@ export async function POST(request: Request) {
     }
     console.log("New lead:", body);
     return NextResponse.json({ ok: true });
-  } catch (e) {
+  } catch {
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
 } 

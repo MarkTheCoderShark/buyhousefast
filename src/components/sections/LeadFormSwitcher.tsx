@@ -14,7 +14,7 @@ export default function LeadFormSwitcher() {
         <p className="text-muted-foreground mt-2">Select your state and tell us about your property to receive a fair, no-obligation cash offer.</p>
       </div>
       <div className="flex justify-center mb-6">
-        <Select value={state} onValueChange={(v) => setState(v as any)}>
+        <Select value={state} onValueChange={(v: string) => setState(v as "California" | "Washington")}>
           <SelectTrigger className="min-w-[220px]">
             <SelectValue placeholder="Select a state" />
           </SelectTrigger>

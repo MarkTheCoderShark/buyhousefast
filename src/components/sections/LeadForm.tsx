@@ -49,7 +49,7 @@ export default function LeadForm({ state }: { state: "California" | "Washington"
       if (!res.ok) throw new Error("Request failed");
       setResult("success");
       form.reset({ ...values, name: "", email: "", phone: "", address: "", notes: "" });
-    } catch (e) {
+    } catch {
       setResult("error");
     } finally {
       setSubmitting(false);
