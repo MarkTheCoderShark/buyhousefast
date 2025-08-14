@@ -14,7 +14,17 @@ import FAQGlobal from "@/components/sections/FAQGlobal";
 import { useId } from "react";
 
 // Grid pattern component for visual texture
-function GridPattern({ width, height, x, y, squares, className, ...props }: any) {
+interface GridPatternProps {
+  width: number;
+  height: number;
+  x: string;
+  y: string;
+  squares: number[][];
+  className?: string;
+  [key: string]: unknown;
+}
+
+function GridPattern({ width, height, x, y, squares, className, ...props }: GridPatternProps) {
   const patternId = useId();
 
   return (
@@ -39,16 +49,19 @@ function GridPattern({ width, height, x, y, squares, className, ...props }: any)
       />
       {squares && (
         <svg x={x} y={y} className="overflow-visible">
-          {squares.map(([x, y]: any, i: number) => (
-            <rect
-              strokeWidth="0"
-              key={`${x}-${y}-${i}`}
-              width={width + 1}
-              height={height + 1}
-              x={x * width}
-              y={y * height}
-            />
-          ))}
+          {squares.map((square: number[], i: number) => {
+            const [squareX, squareY] = square;
+            return (
+              <rect
+                strokeWidth="0"
+                key={`${squareX}-${squareY}-${i}`}
+                width={width + 1}
+                height={height + 1}
+                x={squareX * width}
+                y={squareY * height}
+              />
+            );
+          })}
         </svg>
       )}
     </svg>
@@ -79,13 +92,11 @@ function SectionWrapper({
   children, 
   className, 
   pattern = false,
-  patternOpacity = 0.03,
   patternSize = 20
 }: { 
   children: React.ReactNode, 
   className?: string,
   pattern?: boolean,
-  patternOpacity?: number,
   patternSize?: number
 }) {
   // Use deterministic pattern squares to avoid hydration mismatch
@@ -135,7 +146,6 @@ export default function Home() {
       <SectionWrapper 
         className="bg-slate-900 text-white" 
         pattern={true}
-        patternOpacity={0.05}
       >
         <div className="max-w-7xl mx-auto">
           <HowItWorks />
@@ -161,7 +171,6 @@ export default function Home() {
       <SectionWrapper 
         className="bg-gradient-to-br from-slate-50 to-blue-50" 
         pattern={true}
-        patternOpacity={0.02}
       >
         <div className="max-w-7xl mx-auto">
           <Card className="border-none bg-white/50 backdrop-blur-sm shadow-lg">
@@ -179,7 +188,6 @@ export default function Home() {
       <SectionWrapper 
         className="bg-slate-800 text-white"
         pattern={true}
-        patternOpacity={0.04}
       >
         <div className="max-w-7xl mx-auto space-y-12">
           <Card className="border-none bg-white/5 backdrop-blur-sm shadow-lg">
@@ -215,7 +223,6 @@ export default function Home() {
       <SectionWrapper 
         className="bg-slate-50"
         pattern={true}
-        patternOpacity={0.02}
       >
         <div className="max-w-7xl mx-auto">
           <Card className="border-none bg-white/80 backdrop-blur-sm shadow-lg">
@@ -245,7 +252,6 @@ export default function Home() {
       <SectionWrapper 
         className="bg-gradient-to-r from-blue-600 to-blue-700 text-white"
         pattern={true}
-        patternOpacity={0.05}
       >
         <div className="max-w-7xl mx-auto">
           <Card className="border-none bg-white/10 backdrop-blur-sm shadow-lg">
