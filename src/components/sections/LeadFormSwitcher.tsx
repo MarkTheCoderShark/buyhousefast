@@ -15,12 +15,12 @@ export default function LeadFormSwitcher() {
       </div>
       <div className="flex justify-center mb-6">
         <Select value={state} onValueChange={(v: string) => setState(v as "California" | "Washington")}>
-          <SelectTrigger className="min-w-[220px]">
+          <SelectTrigger className="min-w-[220px] bg-white text-blue-600 border-white/30 hover:bg-white/95">
             <SelectValue placeholder="Select a state" />
           </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="California">California</SelectItem>
-            <SelectItem value="Washington">Washington</SelectItem>
+          <SelectContent className="bg-white">
+            <SelectItem value="California" className="text-blue-600 hover:bg-blue-50">California</SelectItem>
+            <SelectItem value="Washington" className="text-blue-600 hover:bg-blue-50">Washington</SelectItem>
           </SelectContent>
         </Select>
       </div>
