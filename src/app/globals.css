@@ -3,23 +3,23 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #0b1220;
-  --foreground: #e5e7eb;
-  --card: #0f172a;
-  --card-foreground: #e5e7eb;
-  --primary: #38bdf8;
-  --primary-foreground: #0b1220;
-  --secondary: #111827;
-  --secondary-foreground: #e5e7eb;
-  --muted: #0b1220;
-  --muted-foreground: #94a3b8;
-  --accent: #0b1220;
-  --accent-foreground: #e5e7eb;
+  --background: #ffffff;
+  --foreground: #1f2937;
+  --card: #f8fafc;
+  --card-foreground: #1f2937;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #334155;
+  --muted: #f8fafc;
+  --muted-foreground: #64748b;
+  --accent: #f1f5f9;
+  --accent-foreground: #1f2937;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #1f2937;
-  --input: #1f2937;
-  --ring: #38bdf8;
+  --border: #e2e8f0;
+  --input: #ffffff;
+  --ring: #2563eb;
   --radius: 0.75rem;
 }
 
