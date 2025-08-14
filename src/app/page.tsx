@@ -88,12 +88,13 @@ function SectionWrapper({
   patternOpacity?: number,
   patternSize?: number
 }) {
+  // Use deterministic pattern squares to avoid hydration mismatch
   const patternSquares = [
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+    [7, 2],
+    [9, 4],
+    [8, 1],
+    [10, 3],
+    [7, 5],
   ];
 
   return (
