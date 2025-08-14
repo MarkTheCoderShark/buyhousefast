@@ -60,19 +60,73 @@ export default function WashingtonPage() {
   };
 
   return (
-    <>
+    <div className="bg-background text-foreground">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldLocalBusiness) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldBreadcrumbs) }} />
-      <Hero state="Washington" />
-      <HowItWorks />
-      <Benefits state="Washington" />
-      <Testimonials state="Washington" />
-      <CompareOptions state="Washington" />
-      <SEOContent state="Washington" />
-      <ServiceAreas state="Washington" />
-      <LeadForm state="Washington" />
-      <FAQ state="Washington" />
-    </>
+      
+      {/* Hero Section */}
+      <section className="bg-gradient-to-b from-slate-50 to-slate-100 py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <Hero state="Washington" />
+        </div>
+      </section>
+
+      {/* How It Works - Dark Background */}
+      <section className="bg-slate-900 text-white py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <HowItWorks />
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <Benefits state="Washington" />
+        </div>
+      </section>
+
+      {/* Testimonials - Dark Background */}
+      <section className="bg-slate-800 text-white py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <Testimonials state="Washington" />
+        </div>
+      </section>
+
+      {/* Compare Options - Gradient Background */}
+      <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <CompareOptions state="Washington" />
+        </div>
+      </section>
+
+      {/* SEO Content */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SEOContent state="Washington" />
+        </div>
+      </section>
+
+      {/* Service Areas - Light Gray Background */}
+      <section className="bg-slate-50 py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <ServiceAreas state="Washington" />
+        </div>
+      </section>
+
+      {/* Lead Form - Blue Gradient */}
+      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <LeadForm state="Washington" />
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <FAQ state="Washington" />
+        </div>
+      </section>
+    </div>
   );
 } 

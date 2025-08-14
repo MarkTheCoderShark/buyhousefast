@@ -60,19 +60,73 @@ export default function CaliforniaPage() {
   };
 
   return (
-    <>
+    <div className="bg-background text-foreground">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldLocalBusiness) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldBreadcrumbs) }} />
-      <Hero state="California" />
-      <HowItWorks />
-      <Benefits state="California" />
-      <Testimonials state="California" />
-      <CompareOptions state="California" />
-      <SEOContent state="California" />
-      <ServiceAreas state="California" />
-      <LeadForm state="California" />
-      <FAQ state="California" />
-    </>
+      
+      {/* Hero Section */}
+      <section className="bg-gradient-to-b from-slate-50 to-slate-100 py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <Hero state="California" />
+        </div>
+      </section>
+
+      {/* How It Works - Dark Background */}
+      <section className="bg-slate-900 text-white py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <HowItWorks />
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <Benefits state="California" />
+        </div>
+      </section>
+
+      {/* Testimonials - Dark Background */}
+      <section className="bg-slate-800 text-white py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <Testimonials state="California" />
+        </div>
+      </section>
+
+      {/* Compare Options - Gradient Background */}
+      <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <CompareOptions state="California" />
+        </div>
+      </section>
+
+      {/* SEO Content */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SEOContent state="California" />
+        </div>
+      </section>
+
+      {/* Service Areas - Light Gray Background */}
+      <section className="bg-slate-50 py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <ServiceAreas state="California" />
+        </div>
+      </section>
+
+      {/* Lead Form - Blue Gradient */}
+      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <LeadForm state="California" />
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <FAQ state="California" />
+        </div>
+      </section>
+    </div>
   );
 } 
